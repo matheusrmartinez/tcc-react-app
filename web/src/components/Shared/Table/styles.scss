@@ -1,0 +1,181 @@
+.table {
+  $blue: #337ab7;
+  $green: #5cb85c;
+  $light-blue: #5bc0de;
+  $orange: #f0ad4e;
+  $red: #d9534f;
+
+  table {
+    &._table tr td {
+      padding: 0 10px;
+    }
+
+    tr {
+      &:nth-child(even) {
+        background-color: #f2f2f2 !important;
+      }
+
+      &.trLabel {
+        > td:first-child {
+          position: relative;
+          padding-left: 15px;
+
+          > div {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            transform: none !important;
+            z-index: 2;
+
+            // *[class*='MuiTooltip-tooltipPlacementBottom'], *[class*='MuiTooltip-tooltip'] {
+            //   margin: -35px 0 0 85px;
+            // }
+            .status {
+              background-color: white;
+              display: inline-block;
+              width: 10px;
+              height: 100%;
+
+              &.primary {
+                background-color: $blue;
+              }
+
+              &.default {
+                background-color: $blue;
+              }
+
+              &.danger {
+                background-color: $red;
+              }
+
+              &.success {
+                background-color: $green;
+              }
+
+              &.pendent {
+                background-color: $orange;
+              }
+
+              &.paga {
+                background-color: #009358;
+              }
+
+              &.reembolso {
+                background-color: #dc3f53;
+              }
+
+              &.aberta {
+                background-color: #2d86ca;
+              }
+
+              &.cancelada {
+                background-color: #596375;
+              }
+
+              &.expirada {
+                background-color: #e8e8e8;
+              }
+
+              &.emAndamento {
+                background-color: #2d86ca;
+              }
+
+              &.agendada {
+                background-color: #ff00ff;
+              }
+
+              &.emRecuperacao {
+                background-color: #fabb0a;
+              }
+
+              &.emProcessamento {
+                background-color: #ba7344;
+              }
+
+              &.aguardandoDocumentacao {
+                background-color: #ba7344;
+              }
+
+              &.aguardandoReembolso {
+                background-color: #ba7344;
+              }
+
+              &.emAnalise {
+                background-color: #ba7344;
+              }
+
+              &.duplicada {
+                background-color: #ba7344;
+              }
+
+              &.usoInterno {
+                background-color: #ba7344;
+              }
+
+              &.deletado {
+                background-color: #ba7344;
+              }
+
+              &.recusado {
+                background-color: #ba7344;
+              }
+
+              &.inadimplente {
+                background-color: #ba7344;
+              }
+
+              &.emDia {
+                background-color: #8bbf61;
+              }
+
+              &.aguardandoPagamento {
+                background-color: #e5cf37;
+              }
+
+              &.suspenso {
+                background-color: #ab7d50;
+              }
+
+              &.cancelado {
+                background-color: #999999;
+              }
+
+              &.atrasado {
+                background-color: #bd3630;
+              }
+
+              &.finalizado {
+                background-color: #e8e8e8;
+              }
+
+              &.trial {
+                background-color: #002f65;
+              }
+            }
+          }
+        }
+      }
+
+      td {
+        text-align: left;
+        padding: 4px 0 4px 0;
+
+        &.multiLine {
+          width: 100px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          > div {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      th {
+        padding: 4px 0 4px 0;
+      }
+    }
+  }
+}

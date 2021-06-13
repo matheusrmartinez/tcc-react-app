@@ -1,0 +1,47 @@
+.ApparitionsPendingList {
+  
+h3.__title {
+    font-size: 30px;
+}
+
+  .__title {
+    span {
+      display: block;
+      padding-top: 10px;
+      font-size: 20px;
+      color: #888;
+      font-weight: 400;
+    }
+  }
+
+  .padding-5 {
+    padding: 5px;
+  }
+
+  .padding-0 {
+    padding: 0;
+  }
+
+  .padding-15 {
+    padding: 15px;
+  }
+}
+
+  .ApparitionsPendingList{
+    background-color: #b9ddb7;
+    padding: 10px;
+    border: 1px solid #0000003b;
+    box-shadow: -1px 4px 7px 0px black;
+  }
+
+  .MuiTableCell-head {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+
+.table table._table tr td {
+  padding: 0 10px;
+  font-size: 20px;
+}

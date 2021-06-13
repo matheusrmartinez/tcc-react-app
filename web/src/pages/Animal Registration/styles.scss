@@ -1,0 +1,188 @@
+// TABLES
+
+  h3.__title {
+    font-size: 30px;
+}
+
+  .__title {
+    span {
+      display: block;
+      padding-top: 10px;
+      font-size: 20px !important;
+      color: #888;
+      font-weight: 400;
+    }
+  }
+
+.table-title {
+  text-transform: capitalize;
+  color: #3f4653;
+  font-size: 1rem;
+}
+
+.table-row-chip-container {
+  display: flex;
+  max-width: 180px;
+  flex-wrap: wrap;
+}
+
+.default-table {
+  display: flex;
+  flex-direction: column;
+  background-color: #b9ddb7;
+  border-radius: 5px;
+  box-shadow: -1px 4px 7px 0px black;
+  padding: 15px;
+
+  .__title {
+    span {
+      display: block;
+      font-size: 16px;
+      color: #888;
+      font-weight: 400;
+    }
+  }
+
+  &.transparent {
+    background-color: transparent;
+  }
+  &.vertical-table {
+    flex-direction: row;
+    align-items: flex-start;
+    .head,
+    .fields {
+      flex-direction: column;
+      padding-right: 15px;
+      &.pull-right {
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-grow: 1;
+        > div {
+          width: auto;
+        }
+      }
+    }
+  }
+  .head {
+    display: flex;
+    font-weight: 900;
+    > div {
+      color: black;
+    }
+  }
+  .fields {
+    display: flex;
+    &.self-center {
+      align-self: center;
+    }
+    > div {
+      color: #596375;
+      font-weight: 400;
+    }
+  }
+  .head,
+  .fields {
+    > div {
+      flex-grow: 1;
+      flex: 1;
+      width: 100%;
+      &._3 {
+        flex: 3;
+      }
+      &._2 {
+        flex: 2;
+      }
+      &._05 {
+        flex: 0.5;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d9d9d9;
+    margin: 15px -15px -15px;
+    padding: 0 15px;
+    border-radius: 0 0 5px 5px;
+    font-weight: 900;
+    > div {
+      &:first-child {
+        color: black;
+      }
+      &:last-child {
+        color: green;
+      }
+    }
+  }
+
+  .button-success {
+    background-color: #53b653;
+    border: 1px solid;
+    box-shadow: 1px 2px 7px 0px #979797;
+    margin-top: 30px;
+    color: #fff;
+    font-size: 19px;
+  }
+}
+
+label + .MuiInput-formControl {
+  margin-top: 16px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.MuiInputLabel-formControl {
+  top: 0px;
+  left: 5px !important;
+  position: absolute;
+  transform: translate(0, 24px) scale(1);
+  color: #000;
+  z-index: 1;
+}
+
+.MuiInputBase-input {
+  font: inherit;
+  color: currentColor;
+  width: 100%;
+  border: 0;
+  height: 1.1876em;
+  margin: 0;
+  display: block;
+  padding: 6px 0 7px;
+  min-width: 0;
+  background: none;
+  box-sizing: content-box;
+  animation-name: mui-auto-fill-cancel;
+  letter-spacing: inherit;
+  animation-duration: 10ms;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 2;
+}
+
+.MuiFormControl-root {
+  border: 0;
+  margin: 0;
+  display: inline-flex;
+  padding: 0;
+  position: relative;
+  min-width: 0;
+  flex-direction: column;
+  vertical-align: top;
+  width: 25%;
+}
+
+.MuiButton-root:hover {
+  text-decoration: none;
+  background-color: #0d2c09 !important;
+}
+
+.table table._table tr td {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.MuiFormLabel-root.Mui-focused{
+  font-size: 20px;
+  padding-bottom: 5px;
+}
